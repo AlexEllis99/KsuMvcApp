@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Notifications";
+}
+
+<div class="wrapper">
+	@Html.Partial("_MenuPartial")
+	<div class="content-wrapper">
+		<div class="NotificationsList">
+			@foreach (var n in ViewBag.Notifications_List)
+		{
+			<div class="Notification">
+				<span class="NotificationHeader">@n.Notification_Type</span>
+				<span>@n.Message</span>
+			</div>
+	}
+		</div>
+	</div>
+	
+</div>
+
+
+

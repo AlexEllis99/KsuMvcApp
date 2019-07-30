@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Queries";
+}
+
+<div class="wrapper">
+	@Html.Partial("_MenuPartial")
+	<div class="content-wrapper">
+		<table class="table">
+			<tr>
+				<th>Тип</th>
+				<th>Дата создания</th>
+				<th>Заголовок</th>
+				<th>Комментарий</th>
+				<th>Статус</th>
+			</tr>
+			@foreach (var n in ViewBag.Queries_List)
+			{
+			<tr>
+				<td>
+					@n.Query_Type
+				</td>
+				<td>
+					@n.Created
+				</td>
+				<td>
+					@n.Title
+				</td>
+				<td>
+					@n.Content
+				</td>
+				<td>
+					@if (n.Status)
+					{
+					<p>Рассмотрено @n.Settled</p>
+					} else
+					{
+					<p>На рассмотрении</p>
+					}
+				</td>
+			</tr>
+			}
+		</table>
+	</div>
+
+</div>
+

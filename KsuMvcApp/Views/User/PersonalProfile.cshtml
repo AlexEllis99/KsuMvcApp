@@ -1,0 +1,24 @@
+﻿
+@{
+	ViewBag.Title = "Profile";
+}
+<div class="wrapper">
+	@Html.Partial("_MenuPartial")
+	<div class="content-wrapper">
+			<div class="UserBox">
+				<img src="@ViewBag.User.Image" alt="pic" class="UserPic" />
+				<span class="UserName">@ViewBag.User.FullName</span>
+				<span class="UserRank">@ViewBag.User.Position</span>
+				<span class="UserRank">@ViewBag.User.Department_Name</span>
+			</div>
+			<div class="UserBox">
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	
+</div>
+
+
+
