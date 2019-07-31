@@ -1,0 +1,35 @@
+﻿
+@{
+	ViewBag.Title = "FindExpression";
+}
+
+<div class="wrapper">
+	@Html.Partial("_MenuPartial")
+	<div class="content-wrapper">
+		@using (Html.BeginForm())
+	{
+		@Html.AntiForgeryToken()
+		<div class="form-horizontal">
+			<h4>Введите выражение</h4>
+			<hr />
+
+			<div class="form-group">
+				<label>Выражение для поиска</label>
+				<div class="col-md-10">
+					<input type="text" name="expression" value="" />
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Найти" class="btn btn-default" />
+				</div>
+			</div>
+		</div>
+}
+	</div>
+
+</div>
+
+
+
