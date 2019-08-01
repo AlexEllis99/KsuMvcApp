@@ -172,7 +172,6 @@
     <Content Include="Content\icons\m.svg" />
     <Content Include="Content\icons\n.svg" />
     <Content Include="Content\icons\q.svg" />
-    <Content Include="Content\images\sergeyKravtsov.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -213,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
